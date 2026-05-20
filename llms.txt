@@ -148,25 +148,25 @@ Each range has its own GitHub repository:
 
 | Repo | Range |
 |------|-------|
-| `git@personal:nhridoy/1-2.git` | Surahs 1–2 |
-| `git@personal:nhridoy/3-4.git` | Surahs 3–4 |
-| `git@personal:nhridoy/5-6.git` | Surahs 5–6 |
-| `git@personal:nhridoy/7-8.git` | Surahs 7–8 |
-| `git@personal:nhridoy/9-10.git` | Surahs 9–10 |
-| `git@personal:nhridoy/11-12.git` | Surahs 11–12 |
-| `git@personal:nhridoy/13-16.git` | Surahs 13–16 |
-| `git@personal:nhridoy/17-19.git` | Surahs 17–19 |
-| `git@personal:nhridoy/20-22.git` | Surahs 20–22 |
-| `git@personal:nhridoy/23-25.git` | Surahs 23–25 |
-| `git@personal:nhridoy/26-27.git` | Surahs 26–27 |
-| `git@personal:nhridoy/28-33.git` | Surahs 28–33 |
-| `git@personal:nhridoy/34-37.git` | Surahs 34–37 |
-| `git@personal:nhridoy/38-42.git` | Surahs 38–42 |
-| `git@personal:nhridoy/43-50.git` | Surahs 43–50 |
-| `git@personal:nhridoy/51-55.git` | Surahs 51–55 |
-| `git@personal:nhridoy/56-70.git` | Surahs 56–70 |
-| `git@personal:nhridoy/71-80.git` | Surahs 71–80 |
-| `git@personal:nhridoy/81-114.git` | Surahs 81–114 |
+| `github.com/nhridoy/1-2.git` | Surahs 1–2 |
+| `github.com/nhridoy/3-4.git` | Surahs 3–4 |
+| `github.com/nhridoy/5-6.git` | Surahs 5–6 |
+| `github.com/nhridoy/7-8.git` | Surahs 7–8 |
+| `github.com/nhridoy/9-10.git` | Surahs 9–10 |
+| `github.com/nhridoy/11-12.git` | Surahs 11–12 |
+| `github.com/nhridoy/13-16.git` | Surahs 13–16 |
+| `github.com/nhridoy/17-19.git` | Surahs 17–19 |
+| `github.com/nhridoy/20-22.git` | Surahs 20–22 |
+| `github.com/nhridoy/23-25.git` | Surahs 23–25 |
+| `github.com/nhridoy/26-27.git` | Surahs 26–27 |
+| `github.com/nhridoy/28-33.git` | Surahs 28–33 |
+| `github.com/nhridoy/34-37.git` | Surahs 34–37 |
+| `github.com/nhridoy/38-42.git` | Surahs 38–42 |
+| `github.com/nhridoy/43-50.git` | Surahs 43–50 |
+| `github.com/nhridoy/51-55.git` | Surahs 51–55 |
+| `github.com/nhridoy/56-70.git` | Surahs 56–70 |
+| `github.com/nhridoy/71-80.git` | Surahs 71–80 |
+| `github.com/nhridoy/81-114.git` | Surahs 81–114 |
 
 ## Submodule llms.txt
 
