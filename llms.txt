@@ -1,0 +1,35 @@
+# Quran Audio — Complete Corpus (1–114)
+
+> Quran MP3 collection for all 114 surahs by 17 reciters. 19 range submodules.
+
+## Submodules
+
+- 1-2: Surahs 1, 2
+- 3-4: Surahs 3, 4
+- 5-6: Surahs 5, 6
+- 7-8: Surahs 7, 8
+- 9-10: Surahs 9, 10
+- 11-12: Surahs 11, 12
+- 13-16: Surahs 13, 14, 15, 16
+- 17-19: Surahs 17, 18, 19
+- 20-22: Surahs 20, 21, 22
+- 23-25: Surahs 23, 24, 25
+- 26-27: Surahs 26, 27
+- 28-33: Surahs 28, 29, 30, 31, 32, 33
+- 34-37: Surahs 34, 35, 36, 37
+- 38-42: Surahs 38, 39, 40, 41, 42
+- 43-50: Surahs 43, 44, 45, 46, 47, 48, 49, 50
+- 51-55: Surahs 51, 52, 53, 54, 55
+- 56-70: Surahs 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70
+- 71-80: Surahs 71, 72, 73, 74, 75, 76, 77, 78, 79, 80
+- 81-114: Surahs 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114
+
+## Reciters (17)
+
+ar.abdullahbasfar, ar.abdulsamad, ar.abdurrahmaansudais, ar.ahmedajamy, ar.alafasy, ar.aymanswoaid, ar.hanirifai, ar.hudhaify, ar.husary, ar.husarymujawwad, ar.ibrahimakhbar, ar.mahermuaiqly, ar.muhammadayyoub, ar.muhammadjibreel, ar.parhizgar, ar.saoodshuraym, ar.shaatree
+
+## CDN Links
+
+- jsDelivr: https://cdn.jsdelivr.net/gh/nhridoy/{range}@main/{surah_number}/{reciter}/{ayah_number}.mp3
+- GitHub Raw: https://raw.githubusercontent.com/nhridoy/{range}/refs/heads/main/{surah_number}/{reciter}/{ayah_number}.mp3
+- Statically: https://cdn.statically.io/gh/nhridoy/{range}@main/{surah_number}/{reciter}/{ayah_number}.mp3
