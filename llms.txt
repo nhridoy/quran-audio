@@ -1,35 +1,173 @@
 # Quran Audio — Complete Corpus (1–114)
 
-> Quran MP3 collection for all 114 surahs by 17 reciters. 19 range submodules.
+> Quran MP3 collection for all 114 surahs by 17 reciters across 19 range repositories.
 
-## Submodules
+## URL Structure
 
-- 1-2: Surahs 1, 2
-- 3-4: Surahs 3, 4
-- 5-6: Surahs 5, 6
-- 7-8: Surahs 7, 8
-- 9-10: Surahs 9, 10
-- 11-12: Surahs 11, 12
-- 13-16: Surahs 13, 14, 15, 16
-- 17-19: Surahs 17, 18, 19
-- 20-22: Surahs 20, 21, 22
-- 23-25: Surahs 23, 24, 25
-- 26-27: Surahs 26, 27
-- 28-33: Surahs 28, 29, 30, 31, 32, 33
-- 34-37: Surahs 34, 35, 36, 37
-- 38-42: Surahs 38, 39, 40, 41, 42
-- 43-50: Surahs 43, 44, 45, 46, 47, 48, 49, 50
-- 51-55: Surahs 51, 52, 53, 54, 55
-- 56-70: Surahs 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70
-- 71-80: Surahs 71, 72, 73, 74, 75, 76, 77, 78, 79, 80
-- 81-114: Surahs 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114
+Every audio file lives at path:
+
+```
+{range}/{surah_number}/{reciter}/{ayah_number}.mp3
+```
+
+### Placeholder definitions
+
+| Placeholder | Meaning | Example | Rules |
+|-------------|---------|---------|-------|
+| `{range}` | Range directory (git repo) | `1-2` | One of 19 values below |
+| `{surah_number}` | Quran surah number | `2` | Integer 1–114 |
+| `{reciter}` | Reciter identifier | `ar.shaatree` | One of 17 values below |
+| `{ayah_number}` | Verse number within surah | `255` | Integer 1 → max (see table below) |
+
+## Range lookup (surah → range)
+
+To determine which `{range}` to use, look up the surah:
+
+| Range | Surahs | Range | Surahs | Range | Surahs |
+|-------|--------|-------|--------|-------|--------|
+| `1-2` | 1–2 | `3-4` | 3–4 | `5-6` | 5–6 |
+| `7-8` | 7–8 | `9-10` | 9–10 | `11-12` | 11–12 |
+| `13-16` | 13–16 | `17-19` | 17–19 | `20-22` | 20–22 |
+| `23-25` | 23–25 | `26-27` | 26–27 | `28-33` | 28–33 |
+| `34-37` | 34–37 | `38-42` | 38–42 | `43-50` | 43–50 |
+| `51-55` | 51–55 | `56-70` | 56–70 | `71-80` | 71–80 |
+| `81-114` | 81–114 |
+
+## Ayah counts per surah
+
+For valid `{ayah_number}` values, use these ranges:
+
+| Surah | Ayahs | Surah | Ayahs | Surah | Ayahs |
+|------:|------:|------:|------:|------:|------:|
+| 1 | 1–7 | 39 | 1–75 | 77 | 1–50 |
+| 2 | 1–286 | 40 | 1–85 | 78 | 1–40 |
+| 3 | 1–200 | 41 | 1–54 | 79 | 1–46 |
+| 4 | 1–176 | 42 | 1–53 | 80 | 1–42 |
+| 5 | 1–120 | 43 | 1–89 | 81 | 1–29 |
+| 6 | 1–165 | 44 | 1–59 | 82 | 1–19 |
+| 7 | 1–206 | 45 | 1–37 | 83 | 1–36 |
+| 8 | 1–75 | 46 | 1–35 | 84 | 1–25 |
+| 9 | 1–129 | 47 | 1–38 | 85 | 1–22 |
+| 10 | 1–109 | 48 | 1–29 | 86 | 1–17 |
+| 11 | 1–123 | 49 | 1–18 | 87 | 1–19 |
+| 12 | 1–111 | 50 | 1–45 | 88 | 1–26 |
+| 13 | 1–43 | 51 | 1–60 | 89 | 1–30 |
+| 14 | 1–52 | 52 | 1–49 | 90 | 1–20 |
+| 15 | 1–99 | 53 | 1–62 | 91 | 1–15 |
+| 16 | 1–128 | 54 | 1–55 | 92 | 1–21 |
+| 17 | 1–111 | 55 | 1–78 | 93 | 1–11 |
+| 18 | 1–110 | 56 | 1–96 | 94 | 1–8 |
+| 19 | 1–98 | 57 | 1–29 | 95 | 1–8 |
+| 20 | 1–135 | 58 | 1–22 | 96 | 1–19 |
+| 21 | 1–112 | 59 | 1–24 | 97 | 1–5 |
+| 22 | 1–78 | 60 | 1–13 | 98 | 1–8 |
+| 23 | 1–118 | 61 | 1–14 | 99 | 1–8 |
+| 24 | 1–64 | 62 | 1–11 | 100 | 1–11 |
+| 25 | 1–77 | 63 | 1–11 | 101 | 1–11 |
+| 26 | 1–227 | 64 | 1–18 | 102 | 1–8 |
+| 27 | 1–93 | 65 | 1–12 | 103 | 1–3 |
+| 28 | 1–88 | 66 | 1–12 | 104 | 1–9 |
+| 29 | 1–69 | 67 | 1–30 | 105 | 1–5 |
+| 30 | 1–60 | 68 | 1–52 | 106 | 1–4 |
+| 31 | 1–34 | 69 | 1–52 | 107 | 1–7 |
+| 32 | 1–30 | 70 | 1–44 | 108 | 1–3 |
+| 33 | 1–73 | 71 | 1–28 | 109 | 1–6 |
+| 34 | 1–54 | 72 | 1–28 | 110 | 1–3 |
+| 35 | 1–45 | 73 | 1–20 | 111 | 1–5 |
+| 36 | 1–83 | 74 | 1–56 | 112 | 1–4 |
+| 37 | 1–182 | 75 | 1–40 | 113 | 1–5 |
+| 38 | 1–88 | 76 | 1–31 | 114 | 1–6 |
 
 ## Reciters (17)
 
-ar.abdullahbasfar, ar.abdulsamad, ar.abdurrahmaansudais, ar.ahmedajamy, ar.alafasy, ar.aymanswoaid, ar.hanirifai, ar.hudhaify, ar.husary, ar.husarymujawwad, ar.ibrahimakhbar, ar.mahermuaiqly, ar.muhammadayyoub, ar.muhammadjibreel, ar.parhizgar, ar.saoodshuraym, ar.shaatree
+```
+ar.abdullahbasfar
+ar.abdulsamad
+ar.abdurrahmaansudais
+ar.ahmedajamy
+ar.alafasy
+ar.aymanswoaid
+ar.hanirifai
+ar.hudhaify
+ar.husary
+ar.husarymujawwad
+ar.ibrahimakhbar
+ar.mahermuaiqly
+ar.muhammadayyoub
+ar.muhammadjibreel
+ar.parhizgar
+ar.saoodshuraym
+ar.shaatree
+```
 
-## CDN Links
+All reciters have 100% coverage — every surah, every ayah.
 
-- jsDelivr: https://cdn.jsdelivr.net/gh/nhridoy/{range}@main/{surah_number}/{reciter}/{ayah_number}.mp3
-- GitHub Raw: https://raw.githubusercontent.com/nhridoy/{range}/refs/heads/main/{surah_number}/{reciter}/{ayah_number}.mp3
-- Statically: https://cdn.statically.io/gh/nhridoy/{range}@main/{surah_number}/{reciter}/{ayah_number}.mp3
+## CDN URL construction
+
+Branch is always `main`. Replace `{range}`, `{surah_number}`, `{reciter}`, `{ayah_number}` with actual values.
+
+```
+https://cdn.jsdelivr.net/gh/nhridoy/{range}@main/{surah_number}/{reciter}/{ayah_number}.mp3
+https://raw.githubusercontent.com/nhridoy/{range}/refs/heads/main/{surah_number}/{reciter}/{ayah_number}.mp3
+https://cdn.statically.io/gh/nhridoy/{range}@main/{surah_number}/{reciter}/{ayah_number}.mp3
+```
+
+### Examples
+
+Surah 2 (Al-Baqarah), ayah 255 (Ayat al-Kursi), recited by Sha'atree:
+
+| CDN | URL |
+|-----|-----|
+| jsDelivr | `https://cdn.jsdelivr.net/gh/nhridoy/1-2@main/2/ar.shaatree/255.mp3` |
+| GitHub Raw | `https://raw.githubusercontent.com/nhridoy/1-2/refs/heads/main/2/ar.shaatree/255.mp3` |
+| Statically | `https://cdn.statically.io/gh/nhridoy/1-2@main/2/ar.shaatree/255.mp3` |
+
+Note: surah 2 is in the `1-2` range, so `{range}` = `1-2`.
+
+Surah 1 (Al-Fatihah), ayah 1, recited by Alafasy:
+
+| CDN | URL |
+|-----|-----|
+| jsDelivr | `https://cdn.jsdelivr.net/gh/nhridoy/1-2@main/1/ar.alafasy/1.mp3` |
+| GitHub Raw | `https://raw.githubusercontent.com/nhridoy/1-2/refs/heads/main/1/ar.alafasy/1.mp3` |
+| Statically | `https://cdn.statically.io/gh/nhridoy/1-2@main/1/ar.alafasy/1.mp3` |
+
+Surah 112 (Al-Ikhlas), ayah 4, recited by Hudhaify:
+
+| CDN | URL |
+|-----|-----|
+| jsDelivr | `https://cdn.jsdelivr.net/gh/nhridoy/81-114@main/112/ar.hudhaify/4.mp3` |
+| GitHub Raw | `https://raw.githubusercontent.com/nhridoy/81-114/refs/heads/main/112/ar.hudhaify/4.mp3` |
+| Statically | `https://cdn.statically.io/gh/nhridoy/81-114@main/112/ar.hudhaify/4.mp3` |
+
+Note: surah 112 is in the `81-114` range, so `{range}` = `81-114`.
+
+## Repository map
+
+Each range has its own GitHub repository:
+
+| Repo | Range |
+|------|-------|
+| `git@personal:nhridoy/1-2.git` | Surahs 1–2 |
+| `git@personal:nhridoy/3-4.git` | Surahs 3–4 |
+| `git@personal:nhridoy/5-6.git` | Surahs 5–6 |
+| `git@personal:nhridoy/7-8.git` | Surahs 7–8 |
+| `git@personal:nhridoy/9-10.git` | Surahs 9–10 |
+| `git@personal:nhridoy/11-12.git` | Surahs 11–12 |
+| `git@personal:nhridoy/13-16.git` | Surahs 13–16 |
+| `git@personal:nhridoy/17-19.git` | Surahs 17–19 |
+| `git@personal:nhridoy/20-22.git` | Surahs 20–22 |
+| `git@personal:nhridoy/23-25.git` | Surahs 23–25 |
+| `git@personal:nhridoy/26-27.git` | Surahs 26–27 |
+| `git@personal:nhridoy/28-33.git` | Surahs 28–33 |
+| `git@personal:nhridoy/34-37.git` | Surahs 34–37 |
+| `git@personal:nhridoy/38-42.git` | Surahs 38–42 |
+| `git@personal:nhridoy/43-50.git` | Surahs 43–50 |
+| `git@personal:nhridoy/51-55.git` | Surahs 51–55 |
+| `git@personal:nhridoy/56-70.git` | Surahs 56–70 |
+| `git@personal:nhridoy/71-80.git` | Surahs 71–80 |
+| `git@personal:nhridoy/81-114.git` | Surahs 81–114 |
+
+## Submodule llms.txt
+
+Each submodule (range repo) also has its own `llms.txt` with range-specific details. For example, `./1-2/llms.txt` covers only surahs 1 and 2.
