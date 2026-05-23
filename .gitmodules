@@ -1,57 +1,57 @@
 [submodule "1-2"]
 	path = 1-2
-	url = git@personal:nhridoy/1-2.git
+	url = https://github.com/nhridoy/1-2.git
 [submodule "3-4"]
 	path = 3-4
-	url = git@personal:nhridoy/3-4.git
+	url = https://github.com/nhridoy/3-4.git
 [submodule "5-6"]
 	path = 5-6
-	url = git@personal:nhridoy/5-6.git
+	url = https://github.com/nhridoy/5-6.git
 [submodule "7-8"]
 	path = 7-8
-	url = git@personal:nhridoy/7-8.git
+	url = https://github.com/nhridoy/7-8.git
 [submodule "9-10"]
 	path = 9-10
-	url = git@personal:nhridoy/9-10.git
+	url = https://github.com/nhridoy/9-10.git
 [submodule "11-12"]
 	path = 11-12
-	url = git@personal:nhridoy/11-12.git
+	url = https://github.com/nhridoy/11-12.git
 [submodule "13-16"]
 	path = 13-16
-	url = git@personal:nhridoy/13-16.git
+	url = https://github.com/nhridoy/13-16.git
 [submodule "17-19"]
 	path = 17-19
-	url = git@personal:nhridoy/17-19.git
+	url = https://github.com/nhridoy/17-19.git
 [submodule "20-22"]
 	path = 20-22
-	url = git@personal:nhridoy/20-22.git
+	url = https://github.com/nhridoy/20-22.git
 [submodule "23-25"]
 	path = 23-25
-	url = git@personal:nhridoy/23-25.git
+	url = https://github.com/nhridoy/23-25.git
 [submodule "26-27"]
 	path = 26-27
-	url = git@personal:nhridoy/26-27.git
+	url = https://github.com/nhridoy/26-27.git
 [submodule "28-33"]
 	path = 28-33
-	url = git@personal:nhridoy/28-33.git
+	url = https://github.com/nhridoy/28-33.git
 [submodule "34-37"]
 	path = 34-37
-	url = git@personal:nhridoy/34-37.git
+	url = https://github.com/nhridoy/34-37.git
 [submodule "38-42"]
 	path = 38-42
-	url = git@personal:nhridoy/38-42.git
+	url = https://github.com/nhridoy/38-42.git
 [submodule "43-50"]
 	path = 43-50
-	url = git@personal:nhridoy/43-50.git
+	url = https://github.com/nhridoy/43-50.git
 [submodule "51-55"]
 	path = 51-55
-	url = git@personal:nhridoy/51-55.git
+	url = https://github.com/nhridoy/51-55.git
 [submodule "56-70"]
 	path = 56-70
-	url = git@personal:nhridoy/56-70.git
+	url = https://github.com/nhridoy/56-70.git
 [submodule "71-80"]
 	path = 71-80
-	url = git@personal:nhridoy/71-80.git
+	url = https://github.com/nhridoy/71-80.git
 [submodule "81-114"]
 	path = 81-114
-	url = git@personal:nhridoy/81-114.git
+	url = https://github.com/nhridoy/81-114.git
